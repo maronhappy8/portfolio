@@ -1,0 +1,6 @@
+@use 'sass:math';
+@use '../global' as *;
+
+.scrollin-clip {
+  clip-path: inset(0 100% 0 0);
+}

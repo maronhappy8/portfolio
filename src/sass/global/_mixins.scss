@@ -1,0 +1,17 @@
+@use 'sass:math';
+@use 'sass:map';
+
+$breakpoints: (
+  'xsm': 350,
+  'sm': 600,
+  'tb2': 800,
+  'tb': 1000,
+  'pc': 1240,
+  'pcL': 1440,
+);
+
+@mixin mq($point: sm, $dir: down) {
+  @media screen and (#{if($dir != down, "min", "max")}-width: #{if(type-of($point) != number, if($dir != down, map.get($breakpoints,$point), map.get($breakpoints,$point) - 1), if($dir != down, $point, $point - 1))}px) {
+    @content;
+  }
+}

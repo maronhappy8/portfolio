@@ -1,0 +1,29 @@
+@use 'sass:math';
+@use 'sass:map';
+@use '../global' as *;
+
+.u-font__lb {
+  font-family: 'Libre Baskerville';
+  font-weight: 400;
+}
+
+.u-font__sg {
+  font-family: 'Prompt';
+  font-weight: 400;
+}
+
+.u-font__ns {
+  font-family: 'Noto Sans' ;
+  font-weight: 400;
+}
+
+.u-font__zg {
+  font-family: 'Zen Kaku Gothic New';
+}
+
+.pc-none {
+  display: none;
+  @include mq (pcL) {
+    display: block;
+  }
+}

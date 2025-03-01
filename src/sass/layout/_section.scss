@@ -1,0 +1,146 @@
+@use 'sass:math';
+@use '../global' as *;
+
+
+.l-section {
+
+  &__works {
+    background-image: url(/assets/images/top/top-work__background.svg);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    gap: 7vw;
+    padding: 0 50px;
+
+    @include mq(tb) {
+      background-image: url(/assets/images/top/top-work__background2.svg);
+    }
+
+    @include mq(tb2) {
+      display: block;
+      margin: 0 auto;
+      padding-top: 60px;
+      padding-bottom: 130px;
+    }
+  }
+
+  &__about {
+    margin-top: -2px;
+    color: $color-main;
+    padding-top: 8vw;
+    padding-bottom: 30vw;
+    background-image: linear-gradient(180deg, #81969E, #44606A);
+    mask-image: url("../images/top/top-mask.svg");
+    mask-repeat: no-repeat;
+    mask-position: 0 0;
+    mask-size: 100%;
+    /* Chrome, Safari用 */
+    -webkit-mask-image: url("../images/top/top-mask.svg");
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: 0 0;
+    -webkit-mask-size: 100%;
+
+    @include mq(tb) {
+      padding-top: 0;
+    }
+
+    @include mq(700) {
+      padding-bottom: 45vw;
+    }
+
+    @include mq(350) {
+      padding-bottom: 55vw;
+    }
+  }
+
+
+&__contact {
+  background-color: #44606A;
+  padding-bottom: 140px;
+  position: relative;
+  z-index: 999;
+}
+
+&__top {
+  padding: 70px 0 0;
+
+  @include mq(sm) {
+    padding-top: 30px;
+  }
+}
+
+&__skill {
+  padding: 0 220px 100px ;
+
+  @include mq(pc) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @include mq(tb) {
+    margin-top: -60px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @include mq(tb2) {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 70px;
+  }
+}
+
+
+&__biography {
+  padding-left: 220px;
+  height: 100vh;
+  position: relative;
+  background-color: $color-green;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include mq(pc) {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+  }
+
+
+  @include mq(tb2) {
+    padding-left: 25px;
+    padding-top: 0;
+  }
+}
+
+&__strength {
+  padding: 100px 0 0;
+
+  @include mq(tb2) {
+    padding-top: 70px;
+  }
+}
+
+&__favorites {
+  margin-top: 100px;
+  padding: 0 220px;
+  margin-bottom: 170px;
+
+  @include mq(pc) {
+    padding: 0 50px;
+  }
+
+  @include mq(tb) {
+    padding: 0 50px;
+  }
+
+  @include mq(tb2) {
+    padding: 0 25px;
+    margin-top: 70px;
+    margin-bottom: 150px;
+  }
+}
+}

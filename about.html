@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollToPlugin.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js" defer></script>
+  <script src="https://unpkg.com/split-type" defer></script>
+
+  <script src="assets/js/main.js" defer></script>
+</head>
+
+<body>
+  <header class="l-header">
+
+    <div class="l-header__wrapper">
+      <div class="l-header__logo u-font__lb"><a href="/">M</a></div>
+      <div class="o-btn__openbtn">
+        <div class="o-btn__openbtn-inner"><span class="o-btn__menu">menu</span><span class="o-btn__menu">close</span>
+        </div>
+      </div>
+      <nav id="o-animation__g-nav">
+        <div class="o-hambager__anime">
+          <img src="assets/images/common/common-g-nav__mountain.png" alt="">
+        </div>
+        <div class="o-hambager__circle-anime">
+          <img src="assets/images/common/common-circle.png" alt="">
+        </div>
+        <ul class="l-header__g-nav__wrapper u-font__sg">
+          <li class="u-hover__g-nav"><a href="./index.html#works">WORK</a></li>
+          <li class="u-hover__g-nav"><a href="#about">ABOUT</a></li>
+          <li class="u-hover__g-nav"><a href="/#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="o-animation__circle-bg"></div>
+  </header>
+
+  <div class="p-main" id="about">
+    <main>
+      <section class="l-section__about2 js-anime__section">
+        <h1 class="o-title__h1 u-font__lb"><span class="js-anime__title">ABOUT</span></h1>
+        <div class="p-about2__content-wrapper">
+          <h3 class="o-about__title u-font__zg underlayer-title">ユーザーの視点に立った本質的なデザインを</h3>
+          <p class="p-about2__explain underlayer-sub">自分がユーザーならどこに目を引くだろう？常にユーザーの目線に立ち、クライアントの伝えたい要素を的確にユーザーへ伝えます。</p>
+          <div class="o-scrolldown --about-page"><span>Scroll</span></div>
+        </div>
+        <div class="p-about2__background">
+          <div class="p-about2__mv-wrapper" data-y="-200">
+            <div class="p-about2__background-inner">
+              <div class="p-about2__mv">
+                <img src="assets/images/about/about-person.png" alt="">
+              </div>
+              <div class="work-animation">
+                <p class="p-about2__name">三力谷 萌里<span class="p-about2__name-katakana">ミリキダニ　モエリ</span></p>
+                <p class="p-about2__detail">
+                  私は大学時代に宿泊施設の受付やアパレルでのアルバイトを経験しました。<br>海外の方や幅広い世代のお客さまとの関わりを通して得た、多角的な視点で本質を掴む力やコミュニケーション力を活かしクライアントやユーザーの課題解決に尽力すことができると考えています。<br>クライアントの考えやユーザーの希望を叶えるために、自分なりの最適解をデザインで導き出すことのできるデザイナーを目指します。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="l-section__skill js-anime__section">
+        <div class="o-title__wrapper --exc">
+          <h2 class="o-title__h2"><span class="js-anime__title">SKILL</span></h2>
+          <p class="o-title__sub1">できること</p>
+        </div>
+        <p class="p-skill__content u-font__sg content-base__animation">Illustrator / Photoshop / AdobeXD / figma<br>HTML
+          / CSS / Sass / jQuery /
+          VS Code /
+          Wordpress</p>
+        <p class="p-skill__explain content-base__animation2">
+          私は卒業制作において企画、ディレクション、デザイン、そしてコーディングまでの一貫した経験を積むことができました。特にコーディングの経験によって、レスポンシブなレイアウトまでを考えたデザインを実現できるようになりました。チーム全体の効率を高めるため、コーダーにとってスムーズな作業ができる形を提供します。
+        </p>
+      </section>
+      <section class="l-section__biography p-biography js-anime__section">
+        <div class="o-title__wrapper --exc">
+          <h2 class="o-title__h2"><span class="js-anime__title">BIOGRAPHY</span></h2>
+          <p class="o-title__sub1">デザイナーを目指すまで</p>
+        </div>
+        <div class="side-scroll">
+          <div class="side-scroll-wrapper">
+            <ol class="p-biography__ol content-base__animation">
+              <li>
+                <time datetime="1999-05" class="p-biography__date">1999年5月</time>
+                <p class="p-biography__explain-wrapper">様々なことに挑戦した幼少期</p>
+                <span class="p-biography__dot"></span>
+                <p class="p-biography__explain">
+                  広島県に生まれる。スポーツや絵画など10個以上の習い事を経験し様々なことに挑戦。絵を描くこと、文字や文章を書くことが好きで写生大会やコンクールで受賞経験がある。</p>
+              </li>
+              <li>
+                <time datetime="2018-04" class="p-biography__date">2018年4月</time>
+                <p class="p-biography__explain-wrapper">学問と趣味を突き詰めた大学時代</p>
+                <span class="p-biography__dot"></span>
+                <p class="p-biography__explain">福岡大学
+                  貿易学科に入学。国際寮で生活をしながら主に国際関係について学ぶ。大学4年時にTOEIC800点達成。<br>大好きな旅行や音楽にも全力を注ぐ。
+                </p>
+              </li>
+              <li>
+                <time datetime="2019-08" class="p-biography__date">2019年8月</time>
+                <p class="p-biography__explain-wrapper">ファッションに興味を持つ</p>
+                <span class="p-biography__dot"></span>
+                <p class="p-biography__explain">
+                  周りの影響でファッションに興味を持ち始め、次第にさまざまな系統に挑戦する。お客様に合わせた雰囲気や着こなしが提案できることを強みにアパレルのアルバイトを始める。接客を通してお客様に寄り添って行動する力を身につける。
+                </p>
+              </li>
+              <li>
+                <time datetime="2022-04" class="p-biography__date">2022年4月</time>
+                <p>新卒で英語に関わりのある<br class="p-biography__br">企業に入社</p>
+                <span class="p-biography__dot"></span>
+                <p class="p-biography__explain">
+                  海外や英語との関わりを少しでも持ちたいという思いから英語が社内公用語である企業に入社する。コンタクトセンターに従事するも決められたマニュアルに従った仕事に違和感を持ち始める。</p>
+              </li>
+              <li>
+                <time datetime="2022-11" class="p-biography__date">2022年11月</time>
+                <p class="p-biography__explain-wrapper">本格的にデザインの勉強を始める</p>
+                <span class="p-biography__dot"></span>
+                <p class="p-biography__explain">
+                  自分だからできることを仕事にしたいと考え、Webデザイナーを目指すことを決意。デジタルハリウッドSTUDIO広島へ入学し、本格的にデザインの勉強を始める。
+                </p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <section class="l-section__strength js-anime__section">
+        <div class="o-title__wrapper --exc2">
+          <h2 class="o-title__h2"><span class="js-anime__title">STRENGTH</span></h2>
+          <p class="o-title__sub1">私の強み</p>
+        </div>
+        <div class="p-strength__circle-wrapper1">
+          <div class="p-strength__circle-wrapper2 --sp-large">
+            <div class="p-strength__circle --01">
+              <p class="p-strength__sub-title --01">自主的な学習<br>創造性</p><svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: none;
+                      stroke: #000;
+                    }
+                  </style>
+                </defs>
+                <g id="_レイヤー_1-2" data-name="レイヤー 1">
+                  <path class="cls-1" d="m250,.5c137.8,0,249.5,111.7,249.5,249.5s-111.7,249.5-249.5,249.5S.5,387.8.5,250,112.2.5,250,.5"/>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="p-strength__circle-wrapper2">
+            <div class="p-strength__circle --02">
+              <p class="p-strength__sub-title --02">計画性<br>目標達成能力</p>
+              <svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: none;
+                      stroke: #000;
+                    }
+                  </style>
+                </defs>
+                <g id="_レイヤー_1-2" data-name="レイヤー 1">
+                  <path class="cls-1" d="m250,.5c137.8,0,249.5,111.7,249.5,249.5s-111.7,249.5-249.5,249.5S.5,387.8.5,250,112.2.5,250,.5"/>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="p-strength__circle-wrapper2">
+            <div class="p-strength__circle --03">
+              <p class="p-strength__sub-title --03">コミュニケーション力<br>リーダーシップ</p><svg class="circles"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: none;
+                      stroke: #000;
+                      stroke-dasharray: 1572px;
+                      stroke-dashoffset: -1572px;
+                      transition: stroke-dashoffset 0.5s;
+                    }
+                  </style>
+                </defs>
+                <g id="_レイヤー_1-2" data-name="レイヤー 1">
+                  <path class="cls-1"
+                    d="m250,.5c137.8,0,249.5,111.7,249.5,249.5s-111.7,249.5-249.5,249.5S.5,387.8.5,250,112.2.5,250,.5" />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="p-strength__content-wrapper --01 scrollin-clip">
+          <hr class="p-strength__hr">
+          <div class="p-strength__content-title --01">
+            <p class="p-strength__figure u-font__lb">1</p>
+            <p class="p-strength__figure-title">自主的な学習と創造性</p>
+          </div>
+          <p class="p-strength__content-detail --01">
+            日々自主的に学習することで創造性を高める努力ができます。実際にスクールのカリキュラムを早期に終了し、残った期間で自主制作や卒業制作に取り組むことができました。自分自身で題材を見つけたり、バナー勉強会に自主的に参加することでWebサイトやバナー制作を行いました。流行の移り変わりが激しいWeb業界において、トレンドを敏感にキャッチし、制作に落とし込めるように努力します。
+          </p>
+        </div>
+        <div class="p-strength__content-wrapper --02 scrollin-clip">
+          <div class="p-strength__content-title --02">
+            <p class="p-strength__figure u-font__lb">2</p>
+            <p class="p-strength__figure-title">計画性と目標達成能力</p>
+          </div>
+          <p class="p-strength__content-detail --02">
+            私は緻密に計画を立て、目標を達成できます。実際にTOEIC800点を大学卒業までに取得するという具体的な目標を設定し、半年で200点上げ達成することができました。Web業界でも決められた期間のなかで自分の最大限を発揮しなければならない場面が多々あるため、日々のスケージュールやタスクを詳細に計画することで目標達成に向けて努力します。
+          </p>
+        </div>
+        <div class="p-strength__content-wrapper --03 scrollin-clip">
+          <div class="p-strength__content-title --03">
+            <p class="p-strength__figure u-font__lb">3</p>
+            <p class="p-strength__figure-title --03">コミュニケーション力とリーダーシップ</p>
+          </div>
+          <p class="p-strength__content-detail --03">
+            私はコミュニケーション力を活かし、リーダーシップをとることができます。大学時代には国際寮のリーダーとして、国際交流を盛んにさせる企画をチームで考え、行事を成功させることができました。積極的にコミュニケーションを取り、寮生たちを巻き込むことで多くの参加者を集めることができた経験は、チームで一つのモノを作り上げることの多いWeb業界においても活かすことができると考えます。
+          </p>
+        </div>
+      </section>
+      <section class="l-section__favorites js-anime__section">
+        <div class="o-title__wrapper --exc">
+          <h2 class="o-title__h2"><span class="js-anime__title">FAVORITES</span></h2>
+          <p class="o-title__sub1">私を表す写真</p>
+        </div>
+        <div class="p-favorites__img-wrapper content-base__animation">
+          <div class="p-favorites__item">
+            <div class="p-favorites__img">
+              <a href="/" class="p-favorites__a"><img src="assets/images/about/favorites/fv-gogh.png" alt=""></a>
+            </div>
+            <div class="p-favorites__item-text">
+              <p>ゴッホ展！生い立ちや時代背景、それに伴う彼の心情を感じながら作品を鑑賞することが楽しかった☺︎</p>
+            </div>
+          </div>
+          <div class="p-favorites__item">
+            <div class="p-favorites__img">
+              <img src="assets/images/about/favorites/fv-styling1.png" alt="">
+            </div>
+            <div class="p-favorites__item-text">
+              <p>最近マイブームの服装！メンズライクなファッションにハマっています。</p>
+            </div>
+          </div>
+          <div class="p-favorites__item">
+            <div class="p-favorites__img">
+              <img src="assets/images/about/favorites/fv-ramen.png" alt="">
+            </div>
+            <div class="p-favorites__item-text">
+              <p>私が一番大好きなラーメン屋！4年半住んでいたので福岡グルメはお任せあれ☺︎</p>
+            </div>
+          </div>
+          <div class="p-favorites__item --exc">
+            <div class="p-favorites__img">
+              <img src="assets/images/about/favorites/fv-curry-shoe.png" alt="">
+            </div>
+            <div class="p-favorites__item-text">
+              <p>カレーとスニーカー。ハマっているもの☺︎</p>
+            </div>
+          </div>
+          <div class="p-favorites__item">
+            <div class="p-favorites__img">
+              <img src="assets/images/about/favorites/fv-ski.png" alt="">
+            </div>
+            <div class="p-favorites__item-text">
+              <p>旅行が大好き！これは北海道でスキーをした時の写真。いつか世界一周旅行するのが私の夢☺︎</p>
+            </div>
+          </div>
+          <div class="p-favorites__item">
+            <div class="p-favorites__img">
+              <img src="assets/images/about/favorites/fv-banksy.png" alt="">
+            </div>
+            <div class="p-favorites__item-text">
+              <p>バンクシー展。作品に隠された意味を考えながら鑑賞することが好きです！この作品にはどんな意味が込められていると思いますか？</p>
+            </div>
+          </div>
+          <div class="p-favorites__item">
+            <div class="p-favorites__img">
+              <img src="assets/images/about/favorites/fv-trip.png" alt="">
+            </div>
+            <div class="p-favorites__item-text">
+              <p>i+Land nagasakiにて。自然を感じることが好きで、ここでは山も海も堪能できました☺︎</p>
+            </div>
+          </div>
+          <div class="p-favorites__item">
+            <div class="p-favorites__img">
+              <img src="assets/images/about/favorites/fv-band.png" alt="">
+            </div>
+            <div class="p-favorites__item-text">
+              <p>大学時代にはバンドを組んでいました！音楽を聴くことも好きです☺︎</p>
+            </div>
+          </div>
+          <div class="p-favorites__item">
+            <div class="p-favorites__img">
+              <img src="assets/images/about/favorites/fv-styling2.png" alt="">
+            </div>
+            <div class="p-favorites__item-text">
+              <p>色々な系統の服装を楽しむことが好きです！その日行く場所、一緒に遊ぶ友達の雰囲気に合わせてコーデを組むのが日々の楽しみです☺︎</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <footer class="l-footer">
+      <div class="l-footer__mountain-img">
+        <img src="assets/images/common/common-moutain.png" alt="">
+      </div>
+      <ul class="l-footer__g-nav__wrapper">
+        <li class="u-hover__g-nav --exc"><a href="./index.html#works">WORK</a></li>
+        <li class="u-hover__g-nav --exc"><a href="#">ABOUT</a></li>
+        <li class="u-hover__g-nav --exc"><a href="/#contact">CONTACT</a></li>
+      </ul>
+      <div class="l-footer__sm-tr">
+        <small class="u-font__sg">copyright ©︎2023 Moeri Mirikidani</small>
+        <div class="l-footer__treatment-wrapper">
+          <div class="l-footer__treatment u-font__lb">Thank you for viewing my portfolio site Thank you for viewing my
+            portfolio site</div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</body>
+
+</html>

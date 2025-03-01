@@ -1,0 +1,95 @@
+@use 'sass:math';
+@use '../global' as *;
+
+.l-footer {
+  padding-top: 40px;
+  color: $color-main;
+  background-color: $color-footer;
+  position: relative;
+  z-index: 999;
+
+  &::before {
+    content: "";
+    display: block;
+    background-image: linear-gradient(90deg,$color-footer , rgba(0,0,0,0));
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+    @include mq(tb2) {
+      display: none;
+    }
+  }
+
+  &__mountain-img {
+    position: absolute;
+    top: -94px;
+    width: 301px;
+
+    @include mq(tb2) {
+      width: 165px;
+      top: -50px;
+    }
+  }
+
+  &__g-nav__wrapper {
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    padding-right: 50px;
+    margin-bottom: 46px;
+
+    @include mq(tb2) {
+      justify-content: center;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+
+  &__sm-tr {
+    display: flex;
+    align-items: end;
+    gap: 140px;
+
+    @include mq(tb2) {
+      gap: 0;
+      flex-flow: column-reverse;
+      align-items: center;
+    }
+
+    & small {
+      width: 500px;
+      flex-shrink: 0;
+      padding-left: 50px;
+      margin-bottom: 50px;
+      z-index: 999;
+
+      @include mq(tb2) {
+        padding-left: 0;
+        text-align: center;
+        margin-top: 60px;
+      }
+    }
+  }
+
+  &__treatment {
+    overflow: hidden;
+    font-size: 10rem;
+    opacity: 0.3;
+    color: $color-footer;
+    -webkit-text-stroke: 1px #FFF;
+    animation: scrollAnime 40s linear infinite;
+    white-space: nowrap;
+  }
+
+}
+@keyframes scrollAnime {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

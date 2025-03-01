@@ -1,0 +1,60 @@
+@use 'sass:math';
+@use '../global' as *;
+
+.l-header {
+  mix-blend-mode: difference;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+
+  @include mq(sm) {
+    mix-blend-mode: unset;
+    height: 60px;
+  }
+
+  &__logo {
+    color: $color-white;
+    font-size: 3.0rem;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    transition: .3s;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    @include mq(tb2) {
+      left: 25px;
+    }
+
+    @include mq(sm) {
+      color: $color-text-main;
+      top: 4px;
+      font-size: 2.0rem;
+    }
+  }
+
+  &__g-nav__wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 40px;
+
+    @include mq(tb2) {
+      justify-content: end;
+      padding-right: 25px;
+    }
+
+    @include mq(sm) {
+      opacity: 1;
+      display: block;
+    }
+  }
+
+
+
+}

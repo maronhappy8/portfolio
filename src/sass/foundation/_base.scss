@@ -1,0 +1,83 @@
+@use 'sass:math';
+@use '../global' as *;
+
+  @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Noto+Sans+JP&family=Space+Grotesk&display=swap');
+html {
+  overflow-x: hidden;
+  font-size: 62.5%;
+  // scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  font-family:'Noto Sans';
+  font-size: 1.6rem;
+  letter-spacing: 0.1em;
+  line-height: #{math.div(40, 20)};
+  color:$color-text-main;
+  font-weight: 400;
+  background-color: $color-main;
+  @include mq (sm) {
+    font-size: 1.4rem;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.p-main {
+  padding-top: 53px;
+}
+
+.js-anime__title {
+  opacity: 0;
+  transform: translate(0px, 0px);
+
+  .char {
+    transform: translateY(110%);
+    display: inline-block;
+    
+  }
+}
+
+.content-base__animation {
+    transform: translateY(10%);
+  opacity: 0;
+}
+
+.content-base__animation2 {
+  transform: translateY(10%);
+opacity: 0;
+}
+
+.underlayer-title {
+  opacity: 0;
+  transform: translateX(-5%);
+}
+
+.underlayer-sub {
+  opacity: 0;
+}
+
+.step-animation {
+  opacity : 0;
+  transition : all 1s;
+}
+
+.step-animation.active{
+  opacity: 1;
+}
+
+.content-mockup__animation {
+  opacity: 0;
+  transform: translateY(10%);
+}
+
+.work-animation {
+  opacity: 0;
+  transform: translateY(10%);
+}

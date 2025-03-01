@@ -1,0 +1,59 @@
+@use 'sass:math';
+@use 'sass:map';
+@use '../global' as *;
+
+.u-hover {
+  &__g-nav a {
+    color: $color-white;
+    display: inline-block;
+    position: relative;
+    transition: .3s;
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      content: '';
+      width: 0;
+      height: 1px;
+      background-color: $color-white;
+      transition: .3s;
+      transform: translateX(-50%);
+
+      @include mq(sm) {
+        background-color: $color-text-main;
+      }
+    }
+
+    @include mq(sm) {
+      color: $color-text-main;
+    }
+  }
+
+    &__g-nav.--exc a {
+      @include mq(sm) {
+        color: $color-main;
+      }
+
+  }
+
+  &__g-nav.--exc a::after {
+    background-color: $color-main;
+  }
+
+
+  &__g-nav a:hover::after {
+    width: 100%;
+
+    @include mq(sm) {
+
+      display: none;
+    }
+  }
+
+}
+
+.js-anime {
+  &__title-wrapper {
+    overflow: hidden;
+  }
+}
